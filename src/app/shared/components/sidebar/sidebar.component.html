@@ -1,0 +1,11 @@
+<h2>Países</h2>
+<hr>
+<ul class="list-group">
+  <li
+    *ngFor="let option of menuOptionsList"
+    [routerLink]="option.routerLink"
+    routerLinkActive="active"
+    class="list-group-item">
+    {{ option.title }}
+  </li>
+</ul>
